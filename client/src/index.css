@@ -1,37 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
+* {
   font-family: 'Montserrat', sans-serif !important;
 }
+
 /* antd override */
-input{
+input {
   border-radius: 2px !important;
   border: 1px solid rgba(128, 128, 128, 0.52) !important;
   height: 40px !important;
 }
-input:focus , .ant-picker{
+
+input:focus,
+.ant-picker {
   outline: none !important;
   box-shadow: none !important;
   border: 1px solid rgb(100, 100, 100) !important;
 }
-label{
+
+label {
   font-size: 16px !important;
   color: black !important;
 }
-.ant-form-item{
+
+.ant-form-item {
   margin: 10px 0 !important;
 }
-.ant-picker-input input{
+
+.ant-picker-input input {
   border: none !important;
 }
-.ant-picker{
+
+.ant-picker {
   border-radius: 2px !important;
   border: 1px solid rgba(128, 128, 128, 0.52) !important;
   height: 40px !important;
 }
+
 /* Common styling */
 
-.spinner-parent{
+.spinner-parent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,32 +53,36 @@ label{
 
 }
 
-.spinner-border{
+.spinner-border {
 
   width: 5rem;
   height: 5rem;
   color: #CEDC00 !important;
 
 }
-.page-title{
+
+.page-title {
   font-size: 25px;
   color: rgba(0, 0, 0, 0.833);
   font-weight: bold;
 }
-.card-title{
+
+.card-title {
   font-size: 22px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.627);
 }
-.normal-text{
+
+.normal-text {
   font-size: 1rem;
 }
-.card{
-  box-shadow:0 0 2px gray ;
+
+.card {
+  box-shadow: 0 0 2px gray;
   border-radius: 0 !important;
 }
 
-.primary-button{
+.primary-button {
   background-color: #00352F !important;
   border-color: white !important;
   height: 40px !important;
@@ -80,28 +92,29 @@ label{
   width: max-content !important;
 }
 
-.primary-button:hover{
+.primary-button:hover {
   transform: translateY(3px);
 }
 
-.full-width-button{
-    width: 100% !important;
+.full-width-button {
+  width: 100% !important;
 }
 
-p{
+p {
   color: rgba(0, 0, 0, 0.673) !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.anchor{
+.anchor {
   color: rgb(0, 0, 0) !important;
   text-decoration: underline;
   cursor: pointer;
   font-size: 16px !important;
   font-weight: 400;
 }
-.anchor:hover{
+
+.anchor:hover {
   text-decoration: underline !important;
 }
 
@@ -109,21 +122,29 @@ p{
 
 
 /* authentication pages */
-.authentication{
+.authentication {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image:url('./img/2.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  /* background-image:url('./img/2.jpg'); */
+  /* background-color: #598735; */
+  /* Used if the image is unavailable */
+  background: rgb(63, 251, 173);
+  background: radial-gradient(circle, rgba(63, 251, 173, 1) 0%, rgba(70, 153, 252, 1) 100%);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
-.authentication-form{
+
+.authentication-form {
   width: 400px;
 }
-.authentication .card-title{
+
+.authentication .card-title {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #CEDC00;
@@ -132,4 +153,35 @@ p{
   padding: 7px 15px;
   margin-left: -40px;
   border-bottom-left-radius: 10px;
+}
+
+/* ANIMATION */
+.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }

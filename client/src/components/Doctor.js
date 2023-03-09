@@ -11,6 +11,7 @@ function Doctor({ doctor }) {
       <h1 className="card-title">
         {doctor.firstName} {doctor.lastName}
       </h1>
+      <i>{doctor.specialization}</i>
       <hr />
       <p>
         <b>Phone Number : </b>

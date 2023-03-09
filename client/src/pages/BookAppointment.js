@@ -6,7 +6,6 @@ import { showLoading, hideLoading } from "../redux/alertsSlice";
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import moment from "moment";
 
 function BookAppointment() {
   const [isAvailable, setIsAvailable] = useState(false);
@@ -21,8 +20,7 @@ function BookAppointment() {
   const getDoctorData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-id",
+      const response = await axios.post("/api/doctor/get-doctor-info-by-id",
         {
           doctorId: params.doctorId,
         },
@@ -126,6 +124,14 @@ function BookAppointment() {
               <h1 className="normal-text">
                 <b>Timings :</b> {doctor.timings[0]} - {doctor.timings[1]}
               </h1>
+              <p>
+                <b>Specialization : </b>
+                {doctor.specialization}
+              </p>
+              <p>
+                <b>Experience : </b>
+                {doctor.experience}
+              </p>
               <p>
                 <b>Phone Number : </b>
                 {doctor.phoneNumber}
