@@ -45,7 +45,10 @@ function Login() {
 
 
                     <Button className='primary-button my-2 full-width-button' htmlType="submit">LOGIN</Button>
-                    <Link to='/register' className="anchor mt-2">CLICK HERE TO REGISTER</Link>
+                    <p>
+                        Don't have an account?
+                    </p>
+                    <Link to='/register' className="anchor mt-2">SIGN UP</Link>
 
                 </Form>
 

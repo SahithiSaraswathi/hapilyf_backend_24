@@ -80,6 +80,10 @@ label{
   width: max-content !important;
 }
 
+.primary-button:hover{
+  transform: translateY(3px);
+}
+
 .full-width-button{
     width: 100% !important;
 }
@@ -91,10 +95,11 @@ p{
 }
 
 .anchor{
-  color: black !important;
+  color: rgb(0, 149, 246) !important;
   text-decoration: underline;
   cursor: pointer;
   font-size: 16px !important;
+  font-weight: 600;
 }
 .anchor:hover{
   text-decoration: underline !important;
