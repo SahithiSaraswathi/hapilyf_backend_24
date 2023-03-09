@@ -48,7 +48,9 @@ function Login() {
                     <p>
                         Don't have an account?
                     </p>
-                    <Link to='/register' className="anchor mt-2">SIGN UP</Link>
+                    <Button>
+                        <Link to='/register'>SIGN UP</Link>
+                    </Button>
 
                 </Form>
 

@@ -46,7 +46,9 @@ function Register() {
                     </Form.Item>
 
                     <Button className='primary-button my-2 full-width-button' htmlType="submit">REGISTER</Button>
-                    <Link to='/login' className="anchor mt-2">CLICK HERE TO LOGIN</Link>
+                    <p>Already have an account?</p>
+                    <Button className='primary-button my-2 full-width-button' href="/login">LOGIN</Button>
+                    {/* <Link to='/login' className="anchor mt-2">CLICK HERE TO LOGIN</Link> */}
                 </Form>
 
             </div>
