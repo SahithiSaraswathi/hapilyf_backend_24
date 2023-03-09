@@ -3,26 +3,29 @@
     height: 100vh;
 
 }
-.logo{
+
+.logo {
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
 
-.role{
+.role {
     color: blanchedalmond;
     font-size: 30px;
     margin-top: -10px;
 }
 
 .sidebar {
-    background-color: #00352F;
+    /* background-color: #00352F; */
+    background: rgb(34, 102, 195);
+    background: linear-gradient(19deg, rgba(34, 102, 195, 1) 0%, rgba(45, 253, 177, 1) 100%);
     border-radius: 5px;
     box-shadow: 0 0 5px #CEDC00;
     margin-right: 20px;
     min-height: 100%;
     padding: 10px;
-    
+
 }
 
 
@@ -45,7 +48,7 @@
 }
 
 .body {
-    background-color: rgb(228, 228, 228);
+    /* background-color: rgb(228, 228, 228); */
     border-radius: 5px;
     box-shadow: 0 0 2px gray;
     height: 82vh;
@@ -53,37 +56,38 @@
     padding: 15px;
 }
 
-.menu{
+.menu {
     margin-top: 100px;
     padding: 0 10px;
 }
-.menu-item{
+
+.menu-item {
     margin-top: 30px;
 
 }
 
-.menu-item a{
+.menu-item a {
     color: rgba(255, 255, 255, 0.845);
     text-decoration: none;
     font-size: 18px;
     padding: 0 10px;
 }
 
-.menu-item i{
+.menu-item i {
     color: rgba(255, 255, 255, 0.845);
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
 }
 
-.active-menu-item{
+.active-menu-item {
     color: white;
     background-color: #00594F;
     padding: 5px;
     border-radius: 5px;
 }
 
-.header-action-icon{
+.header-action-icon {
     font-size: 30px;
     color: black !important;
     cursor: pointer;
@@ -93,7 +97,7 @@
 
 
 @media screen and (max-width:768px) {
-    .menu{
+    .menu {
         padding: 0 5px;
     }
 }

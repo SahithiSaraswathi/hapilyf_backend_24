@@ -113,12 +113,13 @@ function BookAppointment() {
           <hr />
           <Row gutter={20} className="mt-5" align="middle">
             <Col span={8} sm={30} xs={24} lg={8}>
+          <div class="vert-move">
+
               <img
-                src="https://www.upperdeckresort.com/assets/images/Nav/book-now-hover.gif"
-                alt=""
+                src="https://i.ibb.co/0jBXVdv/pharmacy-store.png" alt="pharmacy-store"
                 width="100%"
-                height="400"
-              />
+                />
+                </div>
             </Col>
             <Col span={8} sm={24} xs={24} lg={8}>
               <h1 className="normal-text">
