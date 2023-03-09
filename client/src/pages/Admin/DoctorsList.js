@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { showLoading, hideLoading } from "../../redux/alertsSlice";
 import axios from "axios";
-import { Table } from "antd";
+import { Button, Table } from "antd";
 import { toast } from "react-hot-toast";
 
 function DoctorList() {
@@ -81,28 +81,28 @@ function DoctorList() {
       render: (text, record) => (
         <div className="d-flex">
           {record.status === "pending" && (
-            <h1
+            <Button
               className="anchor"
               onClick={() => changeDoctorStatus(record, "approved")}
             >
               Approve
-            </h1>
+            </Button>
           )}
           {record.status === "approved" && (
-            <h1
+            <Button type="primary" danger
               className="anchor"
               onClick={() => changeDoctorStatus(record, "Blocked")}
             >
               Block
-            </h1>
+            </Button>
           )}
           {record.status === "Blocked" && (
-            <h1
+            <Button style={{ background: "lime",}}
               className="anchor"
               onClick={() => changeDoctorStatus(record, "approved")}
             >
               Approve
-            </h1>
+            </Button>
           )}
         </div>
       ),

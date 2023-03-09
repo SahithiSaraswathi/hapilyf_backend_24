@@ -95,11 +95,11 @@ p{
 }
 
 .anchor{
-  color: rgb(0, 149, 246) !important;
+  color: rgb(0, 0, 0) !important;
   text-decoration: underline;
   cursor: pointer;
   font-size: 16px !important;
-  font-weight: 600;
+  font-weight: 400;
 }
 .anchor:hover{
   text-decoration: underline !important;
