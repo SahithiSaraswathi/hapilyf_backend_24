@@ -150,7 +150,7 @@ function BookAppointment() {
                 {doctor.website}
               </p>
               <div className="d-flex flex-column pt-2 mt-2">
-                <DatePicker
+              <DatePicker
                   format="DD-MM-YYYY"
                   onChange={(value) => {
                     setDate(value.format("DD-MM-YYYY"));

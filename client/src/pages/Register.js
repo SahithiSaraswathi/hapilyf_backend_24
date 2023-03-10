@@ -29,7 +29,17 @@ function Register() {
     <div className="authentication">
       <Row>
         
-
+      <Col>
+          <div class="vert-move">
+            <img
+              src="https://i.ibb.co/vBzz7R1/vaccination.png"
+              alt="consultancy"
+              border="0"
+              width="100%"
+              height="400"
+            />
+          </div>
+        </Col>
         <Col>
           <div className="authentication-form card p-3">
             <h1 className="card-title">Nice to meet U</h1>
@@ -59,17 +69,6 @@ function Register() {
               </Button>
               {/* <Link to='/login' className="anchor mt-2">CLICK HERE TO LOGIN</Link> */}
             </Form>
-          </div>
-        </Col>
-        <Col>
-          <div class="vert-move">
-            <img
-              src="https://i.ibb.co/vBzz7R1/vaccination.png"
-              alt="consultancy"
-              border="0"
-              width="100%"
-              height="400"
-            />
           </div>
         </Col>
       </Row>

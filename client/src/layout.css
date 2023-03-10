@@ -4,12 +4,17 @@
 
 }
 
+body {
+    background: rgb(32, 88, 121);
+}
+
 .logo {
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
-    /* position: relative;
+
+/* position: relative;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 900;
@@ -51,7 +56,7 @@
     background: rgb(34, 102, 195);
     background: linear-gradient(19deg, rgba(34, 102, 195, 1) 0%, rgba(45, 253, 177, 1) 100%);
     border-radius: 5px;
-    box-shadow: 0 0 5px #CEDC00;
+    box-shadow: 0 0 5px #000000;
     margin-right: 20px;
     min-height: 100%;
     padding: 10px;
@@ -78,12 +83,13 @@
 }
 
 .body {
-    /* background-color: rgb(228, 228, 228); */
+    background-color: rgb(228, 228, 228);
     border-radius: 5px;
     box-shadow: 0 0 2px gray;
     height: 82vh;
     width: 100%;
     padding: 15px;
+    overflow-x: scroll;
 }
 
 .menu {
