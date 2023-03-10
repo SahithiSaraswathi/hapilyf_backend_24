@@ -58,10 +58,8 @@ function Login() {
                 LOGIN
               </Button>
               <p>Don't have an account?</p>
-              <Button>
                 <Link to="/register">SIGN UP</Link>
-              </Button>
-            </Form>
+              </Form>
           </div>
         </Col>
       </Row>

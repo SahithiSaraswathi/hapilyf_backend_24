@@ -57,7 +57,7 @@ label {
 
   width: 5rem;
   height: 5rem;
-  color: #CEDC00 !important;
+  color: #6643b5 !important;
 
 }
 
@@ -83,11 +83,11 @@ label {
 }
 
 .primary-button {
-  background-color: #00352F !important;
+  background-color: #6643b5 !important;
   border-color: white !important;
   height: 40px !important;
   width: 100% !important;
-  color: #CEDC00 !important;
+  color: #d5def5 !important;
   font-size: 16px !important;
   width: max-content !important;
 }
@@ -147,8 +147,8 @@ p {
 .authentication .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #CEDC00;
-  color: #00594F !important;
+  background-color: #6643b5;
+  color: #ffffff !important;
   max-width: max-content !important;
   padding: 7px 15px;
   margin-left: -40px;
