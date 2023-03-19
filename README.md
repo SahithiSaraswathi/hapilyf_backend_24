@@ -1,16 +1,8 @@
 
 # Doctor Appointment App
 
-DoctorAppointmentMERN is a web application for scheduling appointments with doctors. This project was built using the MERN (MongoDB, Express, React, Node.js) stack, and allows patients to create accounts, search for doctors, and schedule appointments.
+DoctorAppointmentMERN is a web application for scheduling appointments with doctors. This project was built using the MERN (MongoDB, Express, React, Node.js) stack, and allows patients to create accounts, look for doctors from the list, and schedule appointments.
 
-Features
-
-Patient registration and login
-Doctor registration and login
-Appointment scheduling
-Doctor search by name, specialty, and location
-Google Maps integration for displaying doctor locations
-Email notifications for appointment confirmation and reminders
 ## Features
 - Patient registration and login
 - Doctor registration and login
