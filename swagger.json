@@ -1,0 +1,185 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Petstore Web Application API",
+      "description": "Find out how your APIs work",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:5000",
+    "basePath": "",
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "securityDefinitions": {
+        "ApiKeyAuth":{
+          "type": "apiKey",
+          "in": "headers",
+          "name": "authorization"
+        }
+    },
+    "paths": {
+      "/api/admin/get-all-users":{
+        "get": {
+            "summary": "Get all the users",
+            "tags": [
+              "users"
+            ],
+            "description": "Retrieves a list of all users available",
+            "responses":{
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/user"
+                }
+              },
+              "404": {
+                "description": "user not found"
+              }
+            }
+        }
+      },
+      "/api/admin/get-all-appointments":{
+        "get": {
+            "summary": "Get all the appointments",
+            "tags": [
+              "users"
+            ],
+            "description": "Retrieves a list of all appointments",
+            "responses":{
+              "200": {
+                "description": "OK"
+              },
+              "404": {
+                "description": "user not found"
+              }
+            }
+
+
+        }
+      },
+      "/api/user/register": {
+        "post": {
+          "summary": "create a new user",
+          "description": "create new user with given user details and adds to the database",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User registration successful",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/definitions/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad request"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      },
+      "/api/admin/get-all-doctors":{
+        "get": {
+              "summary": "Get all the doctors",
+              "tags": [
+                "users"
+              ],
+              "description": "Retrieves a list of all doctors available",
+              "responses":{
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/Doctor"
+                  }
+                },
+                "404": {
+                  "description": "Doctors not found"
+                }
+              }
+  
+  
+          }
+        }
+    },
+
+
+    "definitions": {
+      "User": {
+        "properties": {
+          "name":{
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "Doctor":{
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "medicalCertificate":{
+            "url":{
+              "type":"url"
+            },
+            
+            "address": {
+              "type": "string"
+            },
+            "specialization": {
+              "type": "string"
+            },
+            "experience": {
+              "type": "integer"
+            },
+            "feePerConsultation": {
+              "type": "integer"
+            },
+            "timings":{
+              "type": "object"
+            }
+
+          }
+          }
+    }
+  }
+}
+    

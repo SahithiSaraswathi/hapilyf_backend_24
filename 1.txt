@@ -1,0 +1,145 @@
+"/api/user/apply-doctor-account":{
+        "post": {
+          "summary": "Creates a new doctor",
+          "tags": [
+            "Authentication"
+          ],
+          "description": "Creates a new doctor with the provided information.",
+          "consumes": ["multipart/form-data"],
+          "parameters": [
+            {
+              "name": "firstName",
+              "in": "formData",
+              "description": "first Name ",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "lastName",
+              "in": "formData",
+              "description": "last Name ",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "phoneNumber",
+              "in": "formData",
+              "description": "Phone number",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "website",
+              "in": "formData",
+              "description": "website",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "in": "formData",
+              "description": "address",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "specialization",
+              "in": "formData",
+              "description": "specialization",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "experience",
+              "in": "formData",
+              "description": "experience",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "feePerConsultation",
+              "in": "formData",
+              "description": "feePerConsultation",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "MedicalCertificate",
+              "in": "formData",
+              "description": "Medical certificate",
+              "type": "file"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Doctor applied successfully"
+            },
+            "400": {
+              "description": "Bad request"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      },
+
+
+
+
+
+
+      "consumes": ["multipart/form-data"],
+          "parameters": [
+            {
+              "name": "name",
+              "in": "formData",
+              "description": "Name of the user",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "in": "formData",
+              "description": "Email address of the user",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "password",
+              "in": "formData",
+              "description": "Password of the user",
+              "required": true,
+              "type": "string",
+              "format": "password"
+            }
+          ],
+
+
+
+
+
+           *          Doctor:
+ *              type: object
+ *              properties:
+ *                  firstName:
+ *                      type: string
+ *                  lastName:
+ *                      type: string
+ *                  phoneNumber:
+ *                      type: string 
+ *                  website:
+ *                      type:string
+ *                  MedicalCertificate:
+ *                      type:string
+ *                  address:
+ *                      type:string 
+ *                  specialization:
+ *                      type:string
+ *                  experience:
+ *                      type:integer
+ *                  feePerConsultation:
+ *                      type:integer
+ *                  timings:
+ *                      type:object
+ *      
