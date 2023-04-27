@@ -26,6 +26,39 @@ app.use(express.json());
 app.get('/',(req,res)=>{
   res.send('Welcome to mongo db')
 })
+
+
+app.get("/get-all-doctors", async (req, res) => {
+
+  try {
+      const doctors = await Doctor.find({});
+      res
+          .status(200)
+          .send({
+              message: "Doctors fetched successfully",
+              success: true,
+              data: doctors,
+          });
+
+  } catch (error) {
+      console.log(error);
+      res
+          .status(500)
+          .send(
+              {
+                  message: "Error applying doctor account",
+                  success: false,
+                  error,
+              });
+  }
+});
+
+
+
+
+
+
+
 app.post('https://hapilyf.onrender.com/login',(req,res)=>{
   try {
     const user =  User.findOne({ email: req.body.email });
